@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Moon</title>
+    <link rel="stylesheet" type="text/css" href="aboutcss.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Moon</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <section class="about-me">
+        <img src="stars.png" id="stars">
+        <h3 id="text">WHO AM I ?</h3>
+        <img src="deep1.jpeg" id="imgg">
+    </section>
+    <div class="sec" id="sec">
+        <p>Hello there! I'm Dnyandeep Patil, and I'm delighted to welcome you to my corner of the web.
+
+            <br><br>I'm a 20-year-old, and my passion for technology led me to pursue a BTech degree in Computer
+            Technology. This journey has been a thrilling exploration of the digital world, and I'm eager to share my
+            experiences with you.
+
+            <br><br>My fascination with computers and technology started early in life, and as I've embarked on this
+            educational path, I've discovered a world that's as complex as it is exciting. From coding to design, I've
+            delved into the many facets of web development.
+
+            <br><br>Here, you'll find not just a website but a canvas for my creative endeavors. It's where I apply my
+            knowledge of HTML, CSS, and JavaScript to craft meaningful digital experiences. It's more than a learning
+            project; it's a testament to my dedication to web development.
+
+            <br><br>Web development isn't just a profession; it's my passion. I'm committed to creating user-friendly
+            interfaces and captivating designs that leave a lasting impression. Through this website, I aim to not only
+            showcase my work but also provide valuable insights and lessons I've gathered along the way.
+        </p>
+    </div>
+
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>
+                            MY
+                            <span>
+                                Through
+                            </span>
+                        </h3>
+                        <br>
+                        <p> Organize your portfolio projects to demonstrate how you've bridged creativity and technology
+                            in your work. Showcase projects that exemplify your ability to create visually stunning and
+                            highly functional solutions</p>
+                    </div>
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>
+                            Contact Link
+                        </h4>
+                        <p>
+                            <br>
+                            <li><a href="https://www.linkedin.com/in/dnyandeep-patil/">Linkedin</a></li>
+                            <br>
+                            <li><a href="https://github.com/dnyandeep143">Github</a></li>
+                            <br>
+                            <li><a href="https://www.instagram.com/dnyan_cxliii/">Instagram</a></li>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let text = document.getElementById('text');
+        let header = document.querySelector('header');
+        let imgg = document.getElementById('imgg');
+
+        window, addEventListener('scroll', function () {
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            text.style.marginLeft = value * 4 + 'px';
+            header.style.top = value * 0.5 + 'px';
+            imgg.style.top = value * 0.5 + 'px';
+        })
+    </script>
+</body>
+
+</html>

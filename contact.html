@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Moon</title>
+    <link rel="stylesheet" type="text/css" href="contactcss.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Moon</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </header>
+    <section class="con">
+        <img src="stars.png" id="stars">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    
+    </section>
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>
+                            MY
+                            <span>
+                                Through
+                            </span>
+                        </h3>
+                        <br>
+                        <p> Organize your portfolio projects to demonstrate how you've bridged creativity and technology
+                            in your work. Showcase projects that exemplify your ability to create visually stunning and
+                            highly functional solutions</p>
+                    </div>
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>
+                            Contact Link
+                        </h4>
+                        <p>
+                            <br>
+                            <li><a href="https://www.linkedin.com/in/dnyandeep-patil/">Linkedin</a></li>
+                            <br>
+                            <li><a href="https://github.com/dnyandeep143">Github</a></li>
+                            <br>
+                            <li><a href="https://www.instagram.com/dnyan_cxliii/">Instagram</a></li>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let stars = document.getElementById('stars');
+        let header = document.querySelector('header');
+
+        window,addEventListener('scroll',function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25+'px';
+            header.style.top = value * 0.5+'px';
+        })
+    </script>
+</body>
+</html>
